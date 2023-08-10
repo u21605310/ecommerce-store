@@ -1,0 +1,88 @@
+//Header
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+  
+  //Icons and Search bar
+  .account-cart {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-field {
+    margin-right: 16px; 
+  }
+  
+  .search-field input {
+    flex: 1;
+  }
+  
+  //Navbar
+  .navbar {
+    background-color: #f2f2f2; 
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block; 
+    margin-right: 10px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none; 
+    color: #333; 
+    padding: 5px 10px; 
+  }
+  
+  .nav-links li a:hover {
+    background-color: #ccc; 
+    border-radius: 3px;
+  }
+  
+/* Responsive styles for header */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .account-cart,
+  .search-bar {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+/* Responsive styles for navbar */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: block;
+  }
+
+  .nav-links {
+    text-align: center;
+  }
+
+  .nav-links li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+

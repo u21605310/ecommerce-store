@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="filters">
+      <div class="filter-section">
+        <h3>Sort by Price</h3>
+        <mat-form-field appearance="fill">
+          <mat-select [(ngModel)]="sortByPrice" (ngModelChange)="applyFilters()">
+            <mat-option value="lowest">Lowest to Highest</mat-option>
+            <mat-option value="highest">Highest to Lowest</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="shoes">
+      <mat-grid-list cols="2" rowHeight="1:1" gutterSize="16px">
+        <mat-grid-tile *ngFor="let shoe of filteredShoes" class="shoe-card">
+          <mat-card class="card">
+            <div class="slider">
+              <button mat-icon-button class="slider-nav" (click)="prevImage(shoe)">
+                <mat-icon>chevron_left</mat-icon>
+              </button>
+              <img mat-card-image class="card-image" [src]="getCurrentImage(shoe)" alt="{{ shoe.name }}" />
+              <button mat-icon-button class="slider-nav" (click)="nextImage(shoe)">
+                <mat-icon>chevron_right</mat-icon>
+              </button>
+            </div>
+            <mat-card-header>
+              <mat-card-title>{{ shoe.name }}</mat-card-title>
+              <mat-card-subtitle>{{ shoe.brand }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>Price: R{{ shoe.price }}</p>
+            </mat-card-content>
+            <button mat-raised-button color="primary" (click)="addToCartAndNavigate(shoe)">Add to Cart</button>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+  
+  
+  

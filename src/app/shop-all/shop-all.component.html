@@ -1,0 +1,29 @@
+<div class="filter-container">
+    <mat-form-field>
+      <mat-label>Price Filter</mat-label>
+      <mat-select (selectionChange)="filterByPrice($event.value)">
+        <mat-option value="asc">Lowest to Highest</mat-option>
+        <mat-option value="desc">Highest to Lowest</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  
+  <div class="shop-all-container">
+    <h2>Shop All</h2>
+    <div class="shoe-animation">
+      <div class="shoe-container">
+        <div class="shoe-card" *ngFor="let shoe of filteredShoes; let i = index" (click)="addToCartAndNavigate(shoe)">
+          <mat-card class="card">
+            <div class="shoe-image">
+              <img [src]="shoe.images[0]" [alt]="shoe.name">
+            </div>
+            <div class="shoe-details">
+              <h3>{{ shoe.name }}</h3>
+              <p>Brand: {{ shoe.brand }}</p>
+              <p>Price: R{{ shoe.price }}</p>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
