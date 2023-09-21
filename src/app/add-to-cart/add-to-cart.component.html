@@ -1,29 +1,6 @@
-<div class="cart-container">
-    <h2>Shopping Cart</h2>
-    <div class="cart-item card">
-      <img [src]="shoeToAdd?.images[0]" [alt]="shoeToAdd?.name">
-      <h3>{{ shoeToAdd?.name }}</h3>
-      <div class="shoe-details">
-        <p>Brand: {{ shoeToAdd?.brand }}</p>
-        <p>Price: <span class="price">R{{ shoeToAdd?.price }}</span></p>
-      </div>
-      <div class="size-dropdown">
-        <mat-form-field>
-          <mat-label>Size</mat-label>
-          <mat-select>
-            <mat-option *ngFor="let size of shoeToAdd?.sizes" [value]="size">{{ size }}</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-      <div class="quantity-input">
-        <label>Quantity:</label>
-        <input type="number" min="0" [(ngModel)]="quantity">
-      </div>
-      <div class="note-textarea">
-        <label>Note to Order:</label>
-        <textarea [(ngModel)]="note" rows="3"></textarea>
-      </div>
-      <button mat-raised-button color="primary" (click)="proceedToCheckout()">Proceed to Checkout</button>
-    </div>
-  </div>
-  
+<!-- Embed the Google Form using an iframe below your existing content -->
+<h1>Shopping Cart</h1>
+<div>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfIxy_y6X5WJJogr_4dpjsju-3rFEv35QGhnXT6uXliRVxU7A/viewform?embedded=true" width="640" height="1003" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+

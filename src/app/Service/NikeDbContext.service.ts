@@ -11,56 +11,126 @@ export class NikeEntityService {
     const shoes = [
       {
         id: 1,
-        name: "Air Force 1",
-        description: "Coolest shoe",
+        name: "Megumi Fushiguro",
+        description: "",
         images: [
-          "assets/AirForce-1.jpeg",
-          "assets/AirForce-2.jpeg",
-          "assets/AirForce-3.jpeg"
+          "assets/Megumi_Fushiguro.jpeg"
         ],
         
-        price: 2399,
-        sizes: ["5", "6", "7", "8", "9", "10"],
-        brand: "Nike"
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
       },
       {
         id: 2,
-        name: "Air Max Plus",
-        description: "coolest shoe",
+        name: "Demon Slayer",
+        description: "",
         images: [
-          "assets/AirMaxPlus-1.jpeg",
-          "assets/AirMaxPlus-2.jpeg",
-          "assets/AirMaxPlus-3.jpeg"
+          "assets/demon_slayer.jpeg",
+
         ],
-        price: 2999,
-        sizes: ["3", "6", "7", "8", "9"],
-        brand: "Nike"
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
       },
       {
         id: 3,
-        name: "Dunk Low",
-        description: "coolest shoe",
+        name: "Kyojuro Rengoku",
+        description: "",
         images: [
-          "assets/Dunk-1.jpeg",
-          "assets/Dunk-2.jpeg",
-          "assets/Dunk-3.jpeg"
+          "assets/Kyojuro_Rengoku.jpeg",
         ],
-        price: 2099,
-        sizes: ["4", "5", "9", "11"],
-        brand: "Nike"
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
       },
       {
         id: 4,
-        name: "Jordan 1 Low",
-        description: "coolest shoe",
+        name: "Berserk",
+        description: "",
         images: [
-          "assets/AirJordan-1.jpeg",
-          "assets/AirJordan-2.jpeg",
-          "assets/AirJordan-3.jpeg"
+          "assets/Berserk.jpeg",
         ],
-        price: 2299,
-        sizes: ["4", "5", "9", "11"],
-        brand: "Nike"
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
+      },
+      {
+        id: 5,
+        name: "Ippo Makunouchi Dempsey Roll",
+        description: "",
+        images: [
+          "assets/ippo_mak.jpeg",
+        ],
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
+      },
+      {
+        id: 6,
+        name: "Tanjiro Kamando",
+        description: "",
+        images: [
+          "assets/Tanjido.jpeg",
+        ],
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
+      },
+      {
+        id: 7,
+        name: "Kid BUU",
+        description: "",
+        images: [
+          "assets/Kidd_BUU.jpeg",
+        ],
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
+      },
+      {
+        id: 8,
+        name: "Zenitsu Agatsuma",
+        description: "",
+        images: [
+          "assets/Zenintsu.jpeg",
+        ],
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
+      },
+      {
+        id: 9,
+        name: "Goku x Vegeta",
+        description: "",
+        images: [
+          "assets/GokuxVegeta.jpeg",
+        ],
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
+      },
+      {
+        id: 10,
+        name: "Vegeta",
+        description: "",
+        images: [
+          "assets/Vegeta.jpeg",
+        ],
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
+      },
+      {
+        id: 11,
+        name: "Naruto",
+        description: "",
+        images: [
+          "assets/Naruto.jpeg",
+        ],
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"]
+      },
+      {
+        id: 12,
+        name: "Zoro",
+        description: "",
+        images: [
+          "assets/Zoro.jpeg",
+        ],
+        price: 250,
+        sizes: ["Small", "Medium", "Large", "Extra large"],
+        brand: "Otaku Haven"
       }
     ];
 

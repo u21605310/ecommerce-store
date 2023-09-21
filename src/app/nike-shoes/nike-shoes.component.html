@@ -15,13 +15,7 @@
         <mat-grid-tile *ngFor="let shoe of filteredShoes" class="shoe-card">
           <mat-card class="card">
             <div class="slider">
-              <button mat-icon-button class="slider-nav" (click)="prevImage(shoe)">
-                <mat-icon>chevron_left</mat-icon>
-              </button>
               <img mat-card-image class="card-image" [src]="getCurrentImage(shoe)" alt="{{ shoe.name }}" />
-              <button mat-icon-button class="slider-nav" (click)="nextImage(shoe)">
-                <mat-icon>chevron_right</mat-icon>
-              </button>
             </div>
             <mat-card-header>
               <mat-card-title>{{ shoe.name }}</mat-card-title>

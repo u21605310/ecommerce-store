@@ -42,7 +42,7 @@ export class ShopAllComponent implements OnInit {
   }
 
   fetchShoes(): void {
-    const shoeServices = ['nike-shoes', 'adidas-shoes', 'puma-shoes', 'new-balance-shoes'];
+    const shoeServices = ['nike-shoes'];
     const shoeObservables: Observable<any>[] = [];
 
     for (const service of shoeServices) {

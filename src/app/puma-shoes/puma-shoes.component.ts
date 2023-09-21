@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PumaEntityService } from '../Service/PumaDbContext.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,10 +13,9 @@ export class PumaShoesComponent implements OnInit{
   sortByPrice: string = 'highest';
   cart: any[] = [];
 
-  constructor(private pumaEntityService: PumaEntityService, private router: Router) {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.pumaEntityService.setPumaShoesData();
     const storedShoes = localStorage.getItem('puma-shoes');
     this.pumaShoes = storedShoes ? JSON.parse(storedShoes) : [];
     this.filteredShoes = [...this.pumaShoes];

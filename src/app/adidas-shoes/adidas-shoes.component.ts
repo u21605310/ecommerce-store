@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AdidasEntityService } from '../Service/AdidasDbContext.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,10 +13,9 @@ export class AdidasShoesComponent {
   sortByPrice: string = 'highest';
   cart: any[] = [];
 
-  constructor(private adidasEntityService: AdidasEntityService, private router: Router){}
+  constructor(private router: Router){}
 
   ngOnInit(): void {
-    this.adidasEntityService.setAdidasShoesData();
     const storedShoes = localStorage.getItem('adidas-shoes');
     this.adidasShoes = storedShoes ? JSON.parse(storedShoes) : [];
     this.filteredShoes = [...this.adidasShoes];

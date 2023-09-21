@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NewBalanceEntityService } from '../Service/NewBalanceDbContext.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,10 +13,9 @@ export class NewBalanceShoesComponent implements OnInit{
   sortByPrice: string = 'highest';
   cart: any[]= [];
 
-  constructor(private newBalanceEntityService: NewBalanceEntityService, private router:Router) {}
+  constructor(private router:Router) {}
 
   ngOnInit(): void {
-    this.newBalanceEntityService.setNewBalanceShoesData();
     const storedShoes = localStorage.getItem('new-balance-shoes');
     this.newBalanceShoes = storedShoes ? JSON.parse(storedShoes) : [];
     this.filteredShoes = [...this.newBalanceShoes];
